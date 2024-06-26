@@ -20,15 +20,15 @@ const LoginPage = () => {
           <div>
             <label htmlFor="password">Password</label>
             <input
-              type="password"
               ref={passwordRef}
+              type="password"
               id="password"
               className="form_text_input"
-              placeholder="패스워드 입력..."
+              placeholder="패스워드"
             />
             <button
               type="button"
-              onClick={() => console.log(passwordRef.current)}
+              onClick={() => (passwordRef.current.type = "password")}
             >
               비밀번호 숨기기
             </button>
@@ -48,5 +48,4 @@ const LoginPage = () => {
     </section>
   );
 };
-
 export default LoginPage;
